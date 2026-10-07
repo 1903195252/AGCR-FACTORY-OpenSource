@@ -1,0 +1,31 @@
+{
+  "scope": "CPU source-package contracts; no training or effect evaluation",
+  "python": "3.8.10",
+  "torch": "2.0.1+cu118",
+  "tests": 166,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 2,
+  "skip_reason": "Two optional native Transformers/RT-DETR backend tests require the full recorded GPU dependency environment",
+  "internal_import_gaps": {},
+  "source_contract_gaps": [],
+  "public_python_files": 209,
+  "source_packages": [
+    "base48",
+    "downstream_tracking",
+    "experiment_runner",
+    "external_baselines",
+    "formal_evaluation",
+    "generation_exports",
+    "paired_interventions",
+    "paper_experiments",
+    "performance",
+    "research_extensions"
+  ],
+  "cli_smoke_count": 15,
+  "cli_failures": [],
+  "portable_input_lock_verified": true,
+  "tamper_and_overwrite_rejected": true,
+  "camera_metric_helper_imported": true,
+  "source_scope": "Current method, matched supervision controls, scientific dependencies and independent evaluation; operational histories excluded"
+}

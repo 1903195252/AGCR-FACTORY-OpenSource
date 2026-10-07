@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "air-ground-sim"
+version = "0.1.0"
+description = "Standalone full-factory air-ground MuJoCo simulation, without learned policies"
+requires-python = ">=3.11,<3.12"
+dependencies = ["numpy==1.26.4", "Pillow>=9", "glfw>=2", "PyOpenGL>=3.1", "absl-py>=1", "etils[epath]>=1", "typing-extensions>=4.10"]
+
+[project.scripts]
+air-ground-sim = "air_ground_sim.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.optional-dependencies]
+capture = ["h5py>=3.10,<4"]
+plots = ["matplotlib>=3.8,<4"]

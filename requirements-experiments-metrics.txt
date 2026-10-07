@@ -1,0 +1,6 @@
+# Independent metric implementations. Run installation in a dedicated environment.
+-r requirements-experiments.txt
+trackeval @ git+https://github.com/JonathonLuiten/TrackEval.git@12c8791b303e0a0b50f753af204249e622d0281a
+lpips==0.1.4
+pycocotools==2.0.11
+scikit-image>=0.22,<1

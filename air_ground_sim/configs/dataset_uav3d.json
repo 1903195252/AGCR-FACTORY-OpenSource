@@ -1,0 +1,19 @@
+{
+  "name": "agcr-factory-uav3d-10k",
+  "profile": "factory_industrial",
+  "version": "v1.0-trainval",
+  "width": 800,
+  "height": 450,
+  "horizontal_fov_deg": 90,
+  "fps": 10,
+  "scenes": 50,
+  "samples_per_scene": 200,
+  "seed": 20260922,
+  "epoch_us": 1790035200000000,
+  "global_offset_m": [205, 155, 0],
+  "jpeg_quality": 90,
+  "shadow_size": 1024,
+  "min_instance_pixels": 4,
+  "trajectory_mode": "kinematic_virtual_survey",
+  "roof_visible": true
+}

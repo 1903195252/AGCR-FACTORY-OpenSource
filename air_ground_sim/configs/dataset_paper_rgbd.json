@@ -1,0 +1,90 @@
+{
+  "name": "agcr-factory-air-ground-rgbd-v1",
+  "schema_version": "agcr-rgbd-1.0",
+  "nuscenes_version": "v1.0-trainval",
+  "seed": 20260930,
+  "epoch_us": 1790726400000000,
+  "train_layouts": 20,
+  "val_layouts": 5,
+  "test_layouts": 5,
+  "paths_per_layout": 25,
+  "motion_repeats": 2,
+  "augmentation_paths_per_train_layout": 25,
+  "open_entry_paths_per_test_layout": 5,
+  "frames_per_episode": 100,
+  "fps": 5,
+  "history_frames": 6,
+  "future_frames": 16,
+  "evaluation_window_starts": [
+    0,
+    25,
+    50,
+    75
+  ],
+  "width": 720,
+  "height": 480,
+  "horizontal_fov_deg": 80,
+  "depth_min_mm": 100.0,
+  "depth_max_mm": 60000.0,
+  "near_m": 0.05,
+  "far_m": 80.0,
+  "max_targets": 6,
+  "visibility_fraction_min": 0.1,
+  "projection_area_min_px": 144,
+  "jpeg_quality": 95,
+  "shadowsize": 1024,
+  "compression_level": 1,
+  "disk_reserve_gib": 30,
+  "trajectory_mode": "prescribed_kinematic_air_ground",
+  "layout_mode": "native_factory_assets_rearranged",
+  "camera_channels": [
+    "CAM_AIR",
+    "CAM_GROUND"
+  ],
+  "event_groups": [
+    "both_visible",
+    "aerial_only",
+    "ground_only",
+    "neither_visible",
+    "visible_to_occluded",
+    "occluded_to_visible",
+    "aerial_only_to_ground_only",
+    "neither_to_visible"
+  ],
+  "occluder_types": [
+    "rack",
+    "robot_arm",
+    "suspended_load",
+    "vehicle",
+    "ground_structure"
+  ],
+  "target_classes": [
+    "forklift",
+    "worker",
+    "agv",
+    "uav"
+  ],
+  "motion_modes": [
+    "straight",
+    "turn",
+    "stop",
+    "sudden_acceleration",
+    "sudden_deceleration",
+    "fov_entry_exit",
+    "new_target_entry"
+  ],
+  "event_anchor_frame": 30,
+  "event_transition_frame": 37,
+  "event_min_visible_run": 3,
+  "require_script_validation": true,
+  "event_before_frames": [
+    28,
+    29,
+    30
+  ],
+  "event_after_frames": [
+    43,
+    44,
+    45
+  ]
+}

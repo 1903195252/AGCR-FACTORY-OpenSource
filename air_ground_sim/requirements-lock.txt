@@ -1,0 +1,11 @@
+# Tested clean environment, CPython 3.11 / Linux x86_64.
+# MuJoCo is the private runtime in runtime/python, not a PyPI dependency.
+absl-py==2.5.0
+etils==1.14.0
+fsspec==2026.9.0
+glfw==2.10.2
+numpy==1.26.4
+pillow==12.3.0
+PyOpenGL==3.1.10
+typing-extensions==4.16.0
+zipp==4.1.0

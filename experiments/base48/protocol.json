@@ -1,0 +1,277 @@
+{
+  "schema": "agcr-base48-protocol-1",
+  "status": "frozen",
+  "scientific_version": "base_history_evidence_shared_rgbd_36h_v1",
+  "native": {
+    "resolution_wh": [
+      720,
+      480
+    ],
+    "history_frames": 6,
+    "future_frames": 16,
+    "frequency_hz": 5,
+    "views": [
+      "air",
+      "ground"
+    ],
+    "depth_unit": "mm",
+    "sampling_steps": 50
+  },
+  "paired_sample_seeds": [
+    101,
+    211,
+    307,
+    401,
+    503,
+    601,
+    701,
+    809
+  ],
+  "adaptation_seeds": [
+    17,
+    29,
+    43
+  ],
+  "variants": {
+    "receiver_only": {
+      "evidence": false,
+      "receiver_only": true,
+      "ordered": true,
+      "free_prefix_presence_weight": 1.0,
+      "evidence_loss_scales": [
+        8.185239186013316,
+        5.097447345838798,
+        0.9791668661140557,
+        0.6127350119806976,
+        0.8960809023385535,
+        0.05
+      ],
+      "evidence_score_reduction": "mean"
+    },
+    "paired": {
+      "evidence": false,
+      "ordered": true,
+      "free_prefix_presence_weight": 1.0,
+      "evidence_loss_scales": [
+        8.185239186013316,
+        5.097447345838798,
+        0.9791668661140557,
+        0.6127350119806976,
+        0.8960809023385535,
+        0.05
+      ],
+      "evidence_score_reduction": "mean"
+    },
+    "evidence": {
+      "evidence": true,
+      "evidence_weight": 0.1,
+      "evidence_draws": 4,
+      "evidence_bandwidth": 0.2,
+      "ordered": true,
+      "free_prefix_presence_weight": 1.0,
+      "evidence_loss_scales": [
+        8.185239186013316,
+        5.097447345838798,
+        0.9791668661140557,
+        0.6127350119806976,
+        0.8960809023385535,
+        0.05
+      ],
+      "evidence_score_reduction": "mean"
+    }
+  },
+  "stages": {
+    "state": {
+      "steps": 320,
+      "batch": 8,
+      "validate_every": 80,
+      "validation_panel": 20,
+      "warmup_steps": 8,
+      "lr_new": 0.0001,
+      "lr_pretrained": 1e-05
+    },
+    "depth": {
+      "steps": 64,
+      "batch": 8,
+      "validate_every": 32,
+      "validation_panel": 8,
+      "warmup_steps": 4,
+      "lr_new": 0.0001,
+      "lr_pretrained": 1e-05
+    },
+    "video": {
+      "steps": 384,
+      "batch": 8,
+      "validate_every": 96,
+      "validation_panel": 8,
+      "warmup_steps": 16,
+      "lr_new": 0.0001,
+      "lr_pretrained": 1e-05
+    }
+  },
+  "external": {
+    "syncammaster": {
+      "steps": 448,
+      "batch": 8,
+      "validate_every": 112,
+      "panel": 8,
+      "lr": 0.0001,
+      "modality": "rgbd",
+      "sampling_steps": 50
+    }
+  },
+  "evaluation": {
+    "index": "artifacts/agcr-peerdream-recovery-runs/index.json",
+    "video_training_seed": 17,
+    "family_count": 20,
+    "all_family_cells": true,
+    "mean_of_draws_primary": true,
+    "bootstrap_unit": "scene_parent",
+    "training_seed_replication_scope": "state and downstream identity adaptation",
+    "calibration_panel": 64,
+    "state_gate": {
+      "families": 20,
+      "seed": 17029,
+      "history_unique_coverage_min": 0.75,
+      "final_reference_coverage_min": 0.5
+    },
+    "state_evaluation_scope": "all_160_original_test_families",
+    "video_seed_scope": "conditional_on_seed17_shared_renderer",
+    "bootstrap_replicates": 10000,
+    "video_primary_metrics": [
+      "R3",
+      "cross_view_ID_agreement",
+      "false_appearance_pixel_fraction",
+      "reappearance_absolute_seconds"
+    ]
+  },
+  "downstream": {
+    "total_clips": 128,
+    "modality": "rgbd",
+    "groups": [
+      "R",
+      "G",
+      "RG",
+      "RG1",
+      "Rnew"
+    ],
+    "frontend": {
+      "steps": 1024,
+      "batch": 8,
+      "validate_every": 128,
+      "validation_panel": 20,
+      "lr": 0.0001,
+      "warmup_steps": 16
+    },
+    "identity": {
+      "steps": 800,
+      "batch": 16,
+      "validate_every": 200,
+      "validation_panel": 20,
+      "lr": 0.001,
+      "warmup_steps": 16
+    },
+    "frontend_gate": {
+      "min_recall_50": 0.5,
+      "min_reference_targets": 100,
+      "min_positive_anchors": 20,
+      "confidence": 0.25
+    },
+    "frontend_modalities": {
+      "annotation": "rgbd",
+      "downstream": "rgbd",
+      "video_evaluation": "rgb"
+    }
+  },
+  "pro_deferred": [
+    "decoded_video_feedback_to_upstream",
+    "camera_intervention_training_loss",
+    "temporal_gate_independent_ablation",
+    "full_detector_downstream_matrix",
+    "multiple_generator_backbones",
+    "full_robustness_grid"
+  ],
+  "completion_rule": "Registered E1 state, E2 actual generation and independent readout, E3 identity-training cohorts all completed; wall deadline alone is not completion",
+  "measurements_required": [
+    "state_free_presence_quality",
+    "state_update_seconds",
+    "native_rgbd_video_update_seconds",
+    "native_50step_rgbd_pair_seconds",
+    "native_external_update_and_pair_seconds",
+    "frontend_validation_and_annotation_retention"
+  ],
+  "execution": {
+    "cpu_parallelism": 2,
+    "gpu_hours": {
+      "state": 3.0,
+      "depth": 2.0,
+      "video": 10.0,
+      "external": 5.0,
+      "frontend": 2.0,
+      "state_evaluation": 0.75,
+      "state_gate": 0.5,
+      "sampling": 5.0,
+      "calibration": 1.0,
+      "readout": 1.5,
+      "annotation": 1.5,
+      "cache": 1.0,
+      "evaluation": 1.5,
+      "identity": 0.25,
+      "sample_S1_test_shard0": 3.0,
+      "sample_S1_test_shard1": 3.0,
+      "sample_S1_train_shard0": 2.5,
+      "sample_S1_train_shard1": 2.5,
+      "sample_S2_test_shard0": 3.0,
+      "sample_S2_test_shard1": 3.0,
+      "sample_S2_train_shard0": 2.5,
+      "sample_S2_train_shard1": 2.5
+    },
+    "gpus": {
+      "state": 1,
+      "depth": 2,
+      "video": 2,
+      "external": 2,
+      "frontend": 1
+    },
+    "priority": {
+      "cpu": 0,
+      "readout": 3,
+      "evaluation": 4,
+      "annotation": 3,
+      "calibration": 5,
+      "cache": 6,
+      "sampling": 40
+    }
+  },
+  "sampling": {
+    "augmentation_count": 64,
+    "minimum_free_gib": 20,
+    "compression": "lossless_npz",
+    "augmentation_selected_before_predictions": true
+  },
+  "artifact_retention": {
+    "evaluation_draws": 8,
+    "keep_draws": [
+      0
+    ],
+    "policy": "Remove only regenerated Base video caches after dependent image evaluation or identity-query extraction completes; retain all sample checksums, per-sample metrics, independent annotations and model checkpoints",
+    "protect_original_dataset": true,
+    "record_every_removed_file": true
+  },
+  "revision": "peerdream-recovery-20261003-loss-and-proposal-fix",
+  "recovery_provenance": {
+    "source_protocol_sha256": "76d9dd2f52c7a45d2f19452303c3b7e83f87be29a477160042f80b9e2fe89dd5",
+    "evidence_calibration_sha256": "920b60f9d596110d7572a1c507572be919ea43bcf887d92618d1056a528a8a13",
+    "changes": [
+      "independent head loss accumulators",
+      "RT-DETR encoder candidate supervision after image-only forward",
+      "training-only evidence scales and per-coordinate preference scores",
+      "common state adaptation 320 steps",
+      "independent frontends 1024 steps"
+    ],
+    "original_gate_thresholds_preserved": true,
+    "state_initialization": "same original step936 for all variants; failed Base checkpoints not inherited",
+    "external_configuration_unchanged": true,
+    "original_deadlines_preserved": true
+  }
+}

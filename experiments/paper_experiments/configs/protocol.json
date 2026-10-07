@@ -1,0 +1,164 @@
+{
+  "schema": "agcr-experiment-2",
+  "backbone": "Wan2.2-TI2V-5B",
+  "training_seeds": [
+    17,
+    29,
+    43
+  ],
+  "sample_seeds": [
+    101,
+    211,
+    307,
+    401,
+    503,
+    601,
+    701,
+    809
+  ],
+  "history": 6,
+  "future": 16,
+  "fps": 5,
+  "width": 720,
+  "height": 480,
+  "depth_unit": "mm",
+  "state_unit": "m",
+  "padding_columns": 8,
+  "evaluation_starts": [
+    0,
+    25,
+    50,
+    75
+  ],
+  "v_min": 0.1,
+  "area_min": 144,
+  "association_threshold": 0.5,
+  "stages": {
+    "observation": 40000,
+    "dynamics_geometry": 40000,
+    "depth_warmup": 10000,
+    "video": 80000
+  },
+  "optimizer": {
+    "name": "AdamW",
+    "new_lr": 0.0001,
+    "lora_lr": 1e-05,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "effective_batch": 16,
+    "warmup": 1000,
+    "final_lr_ratio": 0.1
+  },
+  "validation_every": 2000,
+  "validation_panel_minimum": 64,
+  "validation_panel_seed": 17029,
+  "sample_steps": 50,
+  "flow_shift": 5.0,
+  "cfg": 1.0,
+  "backbone_shape": {
+    "blocks": 30,
+    "width": 3072,
+    "heads": 24,
+    "latent_channels": 48
+  },
+  "modules": {
+    "width": 256,
+    "heads": 8,
+    "queries": 64,
+    "observation_layers": 6,
+    "dynamics_layers": 6,
+    "geometry_layers": 4,
+    "scene_tokens": 256,
+    "view_scene_tokens": 128,
+    "modes": 8,
+    "lora_rank": 16,
+    "lora_alpha": 16,
+    "adapter_blocks": [
+      3,
+      6,
+      9,
+      12,
+      15,
+      18,
+      21,
+      24,
+      27,
+      30
+    ]
+  },
+  "statistics": {
+    "bootstrap_replicates": 2000,
+    "unit": "camera_path_group",
+    "within_layout": true,
+    "layout_weighting": "equal",
+    "ci": 0.95,
+    "multiple_testing": "benjamini_hochberg"
+  },
+  "downstream": {
+    "sizes": [
+      250,
+      1000,
+      4000
+    ],
+    "generated_fractions": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "total_clips": 4000,
+    "quota_policy": "fixed_target_supplement_capture_no_silent_reduction",
+    "fixed_window_starts": [
+      0,
+      25,
+      50,
+      75
+    ],
+    "acceptance_schema": "agcr-acceptance-2",
+    "updates": 40000,
+    "batch": 16,
+    "detector": "RT-DETR-R18",
+    "identity_width": 128,
+    "train_seeds": [
+      17,
+      29,
+      43
+    ]
+  },
+  "readers": {
+    "auxiliary": "generator_auxiliary",
+    "annotation": "generated_label_reader",
+    "evaluation": "heldout_evaluation_reader"
+  },
+  "split_policy": {
+    "id_groups_per_layout": 2,
+    "annotation_groups_per_layout": 2,
+    "evaluation_reader_groups_per_layout": 2
+  },
+  "physical_data": "qualitative_only",
+  "primary_sample_aggregation": "mean_of_8",
+  "best_of_8_selection": "minimum_paired_RGB_LPIPS; same sample index for every modality",
+  "flags": {
+    "input_views": "paired",
+    "fusion": "weighted",
+    "use_visibility_weight": true,
+    "use_association_weight": true,
+    "use_reliability_weight": true,
+    "weight_control": "learned",
+    "scene_mode": "shared",
+    "future_state": "shared",
+    "appearance_gate": "visible",
+    "depth_input": true,
+    "depth_ordering": "soft",
+    "state_path": "ungated",
+    "cross_view_exchange": true,
+    "loss_pair": true,
+    "loss_surface": true,
+    "loss_correspondence": true
+  }
+}

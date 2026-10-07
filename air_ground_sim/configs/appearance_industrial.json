@@ -1,0 +1,29 @@
+{
+  "name": "industrial",
+  "shadow_size": 4096,
+  "shadow_min_radius_m": 2.0,
+  "viewer_shadow_radius_m": 12.0,
+  "headlight": {"ambient": [0.14, 0.15, 0.17], "diffuse": [0.12, 0.12, 0.12], "specular": [0.05, 0.05, 0.05]},
+  "lights": {
+    "sun": {"dir": [0.35, 0.25, -1.0], "diffuse": [0.70, 0.66, 0.59], "ambient": [0.02, 0.02, 0.02], "specular": [0.48, 0.46, 0.42], "castshadow": true},
+    "hall_fill": {"dir": [-0.4, -0.3, -1.0], "diffuse": [0.23, 0.27, 0.32], "ambient": [0.03, 0.035, 0.04], "specular": [0.14, 0.17, 0.20], "castshadow": false},
+    "refined_key": {"dir": [-0.8, 0.2, -0.7], "diffuse": [0.16, 0.18, 0.20], "ambient": [0, 0, 0], "specular": [0.2, 0.22, 0.24], "castshadow": false},
+    "refined_fill": {"dir": [0.3, -0.8, -0.6], "diffuse": [0.10, 0.10, 0.09], "ambient": [0, 0, 0], "specular": [0.12, 0.12, 0.10], "castshadow": false}
+  },
+  "material_classes": {
+    "concrete": {"specular": 0.08, "shininess": 0.10, "roughness": 0.78, "metallic": 0.0},
+    "floor": {"specular": 0.22, "shininess": 0.28, "roughness": 0.48, "metallic": 0.0},
+    "metal": {"specular": 0.72, "shininess": 0.65, "roughness": 0.29, "metallic": 0.88},
+    "paint": {"specular": 0.30, "shininess": 0.38, "roughness": 0.36, "metallic": 0.12},
+    "rubber": {"specular": 0.05, "shininess": 0.08, "roughness": 0.86, "metallic": 0.0},
+    "glass": {"specular": 0.80, "shininess": 0.88, "roughness": 0.12, "metallic": 0.08},
+    "wood": {"specular": 0.06, "shininess": 0.10, "roughness": 0.82, "metallic": 0.0},
+    "emissive": {"specular": 0.20, "shininess": 0.3, "roughness": 0.3, "metallic": 0.0}
+  },
+  "color_overrides": {
+    "refined_mat_009": [0.19, 0.215, 0.225],
+    "refined_mat_013": [0.40, 0.42, 0.42],
+    "rebuilt_shell": [0.075, 0.13, 0.17],
+    "rebuilt_rubber": [0.037, 0.042, 0.046]
+  }
+}

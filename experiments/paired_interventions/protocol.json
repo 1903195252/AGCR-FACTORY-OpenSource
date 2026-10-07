@@ -1,0 +1,338 @@
+{
+  "version": "paired_interventions_2026_10_03",
+  "status": "reference_protocol",
+  "backbone": "Wan2.2-TI2V-5B",
+  "history_frames": 6,
+  "future_frames": 16,
+  "fps": 5,
+  "resolution_wh": [
+    720,
+    480
+  ],
+  "depth_unit": "mm_optical_axis_Z",
+  "state_units": [
+    "m",
+    "m_per_s",
+    "rad"
+  ],
+  "training_seeds": [
+    17,
+    29,
+    43
+  ],
+  "paired_sample_seeds": [
+    101,
+    211,
+    307,
+    401,
+    503,
+    601,
+    701,
+    809
+  ],
+  "pilot": {
+    "split": "val_only",
+    "evidence_families": 64,
+    "camera_families": "the_same_64_evidence_families_crossed_with_2_passive_camera_paths",
+    "ambiguous_families": 64,
+    "transfer_directions": "balanced",
+    "methods": [
+      "original_complete_architecture",
+      "SynCamMaster_complete_history_adaptation",
+      "ShareVerse_complete_history_adaptation"
+    ],
+    "measured_failures": null
+  },
+  "pairs": {
+    "cells_per_family": 4,
+    "axes": [
+      "2_world_motion_branches",
+      "2_passive_future_camera_paths"
+    ],
+    "history_match": "exact_native_RGB_depth_valid_K_pose_time_arrays",
+    "rendering": "independent_native_MuJoCo_no_frame_copy_or_compositing",
+    "world_motion_rate_hz": 50,
+    "ambiguous_prior": [
+      0.5,
+      0.5
+    ],
+    "ambiguous_disabled_losses": [
+      "evidence_preference",
+      "per_mode_mean_rollout_L1",
+      "samplewise_reappearance_reconstruction"
+    ],
+    "split_unit": "layout_then_entire_scene_parent_and_all_family_descendants",
+    "core_targets": "history_established_and_scene_persistent"
+  },
+  "evidence_objective": {
+    "modes": 8,
+    "continuous_draws_per_mode": 4,
+    "bandwidth_initial": 0.2,
+    "validation_bandwidth_grid": [
+      0.1,
+      0.2,
+      0.4
+    ],
+    "weight": 0.1
+  },
+  "camera_objective": {
+    "weight": 0.1,
+    "measure_on": "independent_world_readouts_of_decoded_videos"
+  },
+  "feedback": {
+    "video_phase_start_update": 40001,
+    "video_phase_end_update": 80000,
+    "every_n_updates": 8,
+    "reference_state_conditioning": false,
+    "reference_future_latent_conditioning": false,
+    "euler_steps": 50,
+    "gradient_tail_steps": 2,
+    "world_draws_per_feedback": 1,
+    "videos_per_feedback": 4,
+    "reappearance_weight": 0.1,
+    "discrete_estimator": "REINFORCE_with_previous_update_EMA_baseline",
+    "baseline_ema_decay": 0.99,
+    "continuous_estimator": "pathwise_reparameterization",
+    "base_observation_dynamics_geometry_replay": true,
+    "upstream_lr": 1e-05,
+    "new_gate_adapter_lr": 0.0001,
+    "lora_lr": 1e-05
+  },
+  "gate": {
+    "frames_per_group": 4,
+    "width": 256,
+    "mixer": [
+      1028,
+      256,
+      256
+    ],
+    "bias": false,
+    "share_across_views_and_adapter_locations": true,
+    "parameter_matched_control": "repeat_mean_of_four_gated_feature_slots_and_masks_before_time_codes",
+    "mean_control_input": {
+      "g_bar": "mean_r(m_r * f_r), before within-group time encoding",
+      "m_bar": "mean_r(m_r)",
+      "slot_r": "concat(g_bar + m_bar * e_r, m_bar)",
+      "invariance": "all joint permutations of the four feature/mask pairs",
+      "scope": "explicit within-group slot assignment in the appearance mixer input",
+      "other_pathways": "state, geometry and compressed backbone features retain temporal information"
+    },
+    "feature_construction": "shared framewise map with no within-group frame index, time code or temporal mixing; partner features and visibility weights enter before mean pooling",
+    "forbidden_appearance_bypasses": [
+      "original framewise masks in time codes or mask channels",
+      "original ordered feature or mask concatenation",
+      "separate partner appearance residual"
+    ],
+    "integration_audit": {
+      "status": "native_Wan_adapter_permutation_audit_passed",
+      "hold_fixed": "pre-update backbone query, state and geometry residuals, model parameters and random draws",
+      "permute_jointly": "the four framewise appearance packets, including masks, viewing directions and partner pooling inputs",
+      "check": "all 10 adapter locations in both views: full pre-mixer slots and appearance-only residual invariant within numeric tolerance",
+      "legacy_interface": "ConditionAdapter.partner must be routed through f_r instead of added independently"
+    },
+    "hidden_state_path": "ungated"
+  },
+  "essential_variants": [
+    {
+      "id": "original",
+      "paired_data": false,
+      "feedback": false,
+      "evidence": false,
+      "camera": false,
+      "ordered": false,
+      "ambiguous_nll_only": false
+    },
+    {
+      "id": "paired_data",
+      "paired_data": true,
+      "feedback": false,
+      "evidence": false,
+      "camera": false,
+      "ordered": false,
+      "ambiguous_nll_only": false
+    },
+    {
+      "id": "distributional_control",
+      "paired_data": true,
+      "feedback": false,
+      "evidence": false,
+      "camera": false,
+      "ordered": false,
+      "ambiguous_nll_only": true
+    },
+    {
+      "id": "feedback_control",
+      "paired_data": true,
+      "feedback": true,
+      "evidence": false,
+      "camera": false,
+      "ordered": false,
+      "ambiguous_nll_only": true
+    },
+    {
+      "id": "evidence_only",
+      "paired_data": true,
+      "feedback": true,
+      "evidence": true,
+      "camera": false,
+      "ordered": false,
+      "ambiguous_nll_only": true
+    },
+    {
+      "id": "camera_only",
+      "paired_data": true,
+      "feedback": true,
+      "evidence": false,
+      "camera": true,
+      "ordered": false,
+      "ambiguous_nll_only": true
+    },
+    {
+      "id": "intervention",
+      "paired_data": true,
+      "feedback": true,
+      "evidence": true,
+      "camera": true,
+      "ordered": false,
+      "ambiguous_nll_only": true
+    },
+    {
+      "id": "ordered_only",
+      "paired_data": true,
+      "feedback": true,
+      "evidence": false,
+      "camera": false,
+      "ordered": true,
+      "ambiguous_nll_only": true
+    },
+    {
+      "id": "full",
+      "paired_data": true,
+      "feedback": true,
+      "evidence": true,
+      "camera": true,
+      "ordered": true,
+      "ambiguous_nll_only": true
+    },
+    {
+      "id": "full_detached_state",
+      "paired_data": true,
+      "feedback": true,
+      "evidence": true,
+      "camera": true,
+      "ordered": true,
+      "detach_decoded_feedback_state": true,
+      "ambiguous_nll_only": true
+    }
+  ],
+  "retained_controls": [
+    "independent_views",
+    "ordinary_joint_attention",
+    "independent_future_draws",
+    "no_source_visibility",
+    "no_association_confidence",
+    "no_reliability",
+    "no_receiving_gate",
+    "no_hidden_state_path",
+    "no_depth_ordering",
+    "no_cross_view_features",
+    "no_paired_correspondence_losses",
+    "shuffled_partner_history",
+    "random_visibility_weights",
+    "oracle_state",
+    "oracle_geometry"
+  ],
+  "compute_matching": {
+    "required": [
+      "admissible_inputs",
+      "unique_frames",
+      "clip_exposure",
+      "backbone",
+      "optimizer_updates",
+      "gradient_bearing_denoising_steps",
+      "gate_parameter_count"
+    ],
+    "report": [
+      "measured_gpu_hours",
+      "peak_memory",
+      "generation_cost",
+      "accepted_and_proposed_clips"
+    ],
+    "native_backbones": "separate_matched_GPU_budget_comparison"
+  },
+  "primary_claims": [
+    "partner_evidence_correct_mass_and_aligned_effect",
+    "generated_reappearance_and_occlusion",
+    "downstream_R3_and_IDF1"
+  ],
+  "additional_metrics": [
+    "hidden_state_ADE_FDE_velocity_yaw_size_error",
+    "presence_and_missing_state_rate",
+    "world_readout_consistency_with_coverage",
+    "early_appearance_frames",
+    "late_disappearance_frames",
+    "reappearance_absolute_and_signed_seconds_with_missing_rate",
+    "ambiguous_branch_Brier_calibration_and_coverage",
+    "depth_MAE_RMSE_mm",
+    "cross_view_surface_error",
+    "LPIPS_FVD",
+    "downstream_HOTA_mAP_ID_switches"
+  ],
+  "statistics": {
+    "bootstrap_replicates": 2000,
+    "cluster": "scene_parent_within_layout",
+    "confidence": 0.95,
+    "multiple_testing": "Holm_for_preregistered_primary_claim_family",
+    "primary_sample_statistic": "mean_of_8",
+    "best_of_8": "supplement_only_same_joint_sample_index"
+  },
+  "downstream": {
+    "clips": 4000,
+    "regimes": [
+      "rendered_only",
+      "generated_only",
+      "2000_rendered_plus_2000_generated"
+    ],
+    "augmentation": "4000_rendered_plus_4000_generated",
+    "controls": [
+      "repeated_originals_matched_updates",
+      "additional_independently_rendered_clips"
+    ]
+  },
+  "essential_generalization": [
+    "unseen_occluder_structure",
+    "unseen_motion_combinations",
+    "unseen_camera_paths"
+  ],
+  "extension_verification": [
+    "heldout_two_camera_mounts_and_intrinsics",
+    "second_generator_backbone",
+    "gradient_tail_4_instead_of_2",
+    "depth_and_partner_degradation",
+    "physical_qualitative_trials"
+  ],
+  "selected_extension": {
+    "name": "heldout_two_camera_mounts_and_intrinsics",
+    "focal_scale_factors": [
+      0.8,
+      1.2
+    ],
+    "aerial_mount_height_offset_m": 0.5,
+    "ground_mount_height_offset_m": 0.15,
+    "holdout": true
+  },
+  "external_input_matching": {
+    "RGB_native_models": "compare_against_our_RGB_only_variant",
+    "RGBD_adaptations": "document_identical_depth_history_adapter_and_cost_before_full_input_comparison"
+  },
+  "results": null,
+  "execution_policy": {
+    "name": "pro6000_equivalent_v4",
+    "global_batch": 16,
+    "cpu_prefetch_per_rank": 2,
+    "geometry_forward_views": 8,
+    "geometry_loss_reduction_views": 2,
+    "history_vae_batch": 2,
+    "precision_change": false
+  }
+}

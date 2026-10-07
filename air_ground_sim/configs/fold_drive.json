@@ -1,0 +1,11 @@
+{
+  "drive": {
+    "type": "implicit_dc",
+    "kp_Nm_rad": 8.0,
+    "kd_Nm_s_rad": 0.1,
+    "assumed_no_load_speed_rad_s": 12.0,
+    "torque_cap_Nm": 1.96133,
+    "torque_cap_source": "20 kgf cm interpretation of paper description, not continuous rating",
+    "calibrated": false
+  }
+}

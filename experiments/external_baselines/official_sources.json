@@ -1,0 +1,40 @@
+{
+  "syncammaster": {
+    "url": "https://github.com/KlingAIResearch/SynCamMaster.git",
+    "commit": "43ea4d961189ce48f3db9f249f033b9a37ce01e2",
+    "checked_date": "2026-10-03",
+    "license_files": []
+  },
+  "shareverse": {
+    "url": "https://github.com/sjbixiitu/shareverse.git",
+    "commit": "51797a3d953f258962b62d2514183d20531e74bb",
+    "checked_date": "2026-10-03",
+    "license_files": [
+      "LICENSE"
+    ]
+  },
+  "panacea": {
+    "url": "https://github.com/wenyuqing/panacea.git",
+    "commit": "ddb45f99bbe17bf4110237788ad7ef1d6c511587",
+    "checked_date": "2026-10-03",
+    "license_files": [
+      "LICENSE"
+    ]
+  },
+  "drivingdiffusion": {
+    "url": "https://github.com/shalfun/DrivingDiffusion.git",
+    "commit": "4480f9aecddae23fac392b597d207ace13710b7b",
+    "checked_date": "2026-10-03",
+    "license_files": [
+      "LICENSE"
+    ]
+  },
+  "magicdrive_v2": {
+    "url": "https://github.com/flymin/MagicDrive-V2.git",
+    "commit": "4ed72c60e5e73e4fa6072a7321fcc2ed9668edee",
+    "checked_date": "2026-10-03",
+    "license_files": [
+      "LICENSE"
+    ]
+  }
+}

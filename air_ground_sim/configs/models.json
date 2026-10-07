@@ -1,0 +1,27 @@
+{
+  "factory_industrial": {
+    "model": "assets/factory_industrial/model.mjb",
+    "model_sha256": "36610b397fba3e466a3b5b2d3eb64055ccd754b0195d746e7243c3ee986ce611",
+    "authoring": "assets/factory_industrial/authoring/model.xml",
+    "authoring_sha256": "f766360dd264272e20d209b00eaba720a80a928d6047ad4fc905606202a9aa94",
+    "drive_geometry": {
+      "wheel_radius_m": 0.035,
+      "wheel_track_m": 0.232
+    },
+    "surface_spec": {
+      "air_z_root_m": -0.07309999999932691,
+      "dog_z_root_m": 0.061000001729999996,
+      "air_contact_prefix": "uav_contact_1215_",
+      "dog_contact_geom": "dog_chassis_collision",
+      "magnetic_parameters": "Retained finite-load development attachment; not magnet calibration"
+    },
+    "native_io": {
+      "large_local_MJB_supported": true,
+      "library_sha256": "c90010cdfb309a1130d8c72535cd3b189fbfd55f2525fcd0314d54fb90f64324"
+    },
+    "description": "Full manufacturing and logistics factory; assembly/QC stations, control cabinets, WIP carts, service trays, rack protection and pallet staging.",
+    "calibrated": false,
+    "formal_task_validated": false,
+    "actor_route_variant": "industrial"
+  }
+}

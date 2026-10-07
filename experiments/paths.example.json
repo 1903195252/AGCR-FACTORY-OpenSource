@@ -1,0 +1,11 @@
+{
+  "upstream": "artifacts/checkpoints/dynamics/last.pt",
+  "statistics": "artifacts/state_statistics.json",
+  "dino_code": "third_party/dinov2",
+  "dino_weights": "models/dinov2/dinov2_vitb14_pretrain.pth",
+  "wan": "models/Wan2.2-TI2V-5B",
+  "empty_text": "artifacts/empty_text.pt",
+  "families": "data/paired_families/index.json",
+  "ordinary": "data/paired_factory/experiment_index.json",
+  "pause_marker": "artifacts/PAUSE"
+}

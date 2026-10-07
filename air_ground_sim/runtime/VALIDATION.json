@@ -1,0 +1,29 @@
+{
+  "scope": "Release smoke checks only; no training or paper experiments were run.",
+  "supported_platform": "Linux x86_64 / CPython 3.11",
+  "profile": "factory_industrial",
+  "core_tests": 8,
+  "geometry_rendering_tests": 5,
+  "planned_capture_episodes": 2550,
+  "python_files_parsed": 234,
+  "mjcf_asset_references_checked": 58702,
+  "fixture_asset_references_checked": 206,
+  "industrial_model_geometries": 114927,
+  "industrial_model_meshes": 58699,
+  "headless_rgbd_lidar_render": true,
+  "actuator_driven_physics_ticks": 100,
+  "mujoco_warning_counts": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "blender_sources_reopened": 5,
+  "external_blender_libraries": 0,
+  "industrial_mjb_unchanged": true,
+  "industrial_model_sha256": "36610b397fba3e466a3b5b2d3eb64055ccd754b0195d746e7243c3ee986ce611",
+  "runtime_cleanup": "28 diagnostic source filename constants sanitized; all executable and other ELF sections unchanged."
+}

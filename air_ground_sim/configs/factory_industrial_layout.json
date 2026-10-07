@@ -1,0 +1,2935 @@
+{
+  "profile": "factory_industrial",
+  "source_profile": "factory_rebuilt",
+  "module_counts": {
+    "assembly": 40,
+    "control": 40,
+    "wip": 40,
+    "service": 40,
+    "rack_protection": 40,
+    "pallet_staging": 8,
+    "fire_station": 2,
+    "training_bay": 1,
+    "median_marking": 18
+  },
+  "relocated_cells": [
+    {
+      "body": "layout_line_r00_c00",
+      "before": {
+        "pos": "-169.31464077207457 -56.66637539981194 0",
+        "quat": "0.99997678152147651 0 0 -0.0068144271915696782"
+      },
+      "after": {
+        "pos": "-168.564641 -57.5 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r00_c01",
+      "before": {
+        "pos": "-139.13274139432673 -56.171766905712261 0",
+        "quat": "0.9999982848690786 0 0 0.0018520958131723099"
+      },
+      "after": {
+        "pos": "-139.132741 -57.5 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r00_c02",
+      "before": {
+        "pos": "-107.12662932521934 -57.880727260243923 0",
+        "quat": "0.99950786441239936 0 0 0.031369236168013542"
+      },
+      "after": {
+        "pos": "-107.126629 -57.5 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r00_c03",
+      "before": {
+        "pos": "-71.067437527098804 -57.800233585889387 0",
+        "quat": "0.99989150003040483 0 0 0.014730518217187195"
+      },
+      "after": {
+        "pos": "-71.3174375 -57.5 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r00_c04",
+      "before": {
+        "pos": "-41.991212343987399 -56.38433200773342 0",
+        "quat": "0.99982232331799448 0 0 -0.018849981299927373"
+      },
+      "after": {
+        "pos": "-41.9912123 -57.5 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r00_c05",
+      "before": {
+        "pos": "40.552239279455598 -57.475232688042141 0",
+        "quat": "0.9999969455246388 0 0 0.0024716272762411971"
+      },
+      "after": {
+        "pos": "40.5522393 -57.5 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r00_c06",
+      "before": {
+        "pos": "73.025076957144165 -57.103466738850244 0",
+        "quat": "0.99985605189216753 0 0 0.016966894076619735"
+      },
+      "after": {
+        "pos": "73.025077 -57.5 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r00_c07",
+      "before": {
+        "pos": "107.50029473948298 -57.096692154537642 0",
+        "quat": "0.99958117257450629 0 0 0.028939236938368144"
+      },
+      "after": {
+        "pos": "111.250295 -57.5 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r00_c08",
+      "before": {
+        "pos": "137.96293097529323 -57.564661047543275 0",
+        "quat": "0.9991921956018901 0 0 -0.040186518240253731"
+      },
+      "after": {
+        "pos": "137.962931 -57.5 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r00_c09",
+      "before": {
+        "pos": "167.3173505060762 -56.347727618280679 0",
+        "quat": "0.99991693623969446 0 0 -0.012888778880205481"
+      },
+      "after": {
+        "pos": "167.317351 -57.5 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r01_c00",
+      "before": {
+        "pos": "-168.02156505470296 -16.690348472887511 0",
+        "quat": "0.99973986446004925 0 0 0.022807968112093874"
+      },
+      "after": {
+        "pos": "-154.021565 -24.5 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r01_c01",
+      "before": {
+        "pos": "-137.33662189605559 -16.208978703311306 0",
+        "quat": "0.99995601264820377 0 0 0.0093793799744609843"
+      },
+      "after": {
+        "pos": "-123.336622 -24.5 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r01_c02",
+      "before": {
+        "pos": "-107.21325213272944 -17.247930051242324 0",
+        "quat": "0.99995896946213259 0 0 0.0090586639318325415"
+      },
+      "after": {
+        "pos": "-93.2132521 -24.5 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r01_c03",
+      "before": {
+        "pos": "-72.899581335296702 -17.041008203251195 0",
+        "quat": "0.99930838829061508 0 0 0.037185280582687268"
+      },
+      "after": {
+        "pos": "-58.8995813 -24.5 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r01_c04",
+      "before": {
+        "pos": "-41.406258130586252 -17.462620067979621 0",
+        "quat": "0.9999668676639516 0 0 0.0081402441207297383"
+      },
+      "after": {
+        "pos": "-27.4062581 -24.5 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r01_c05",
+      "before": {
+        "pos": "40.911885738754393 -16.656060632666154 0",
+        "quat": "0.99980686074635738 0 0 -0.019653020238982424"
+      },
+      "after": {
+        "pos": "26.9118857 -24.5 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r01_c06",
+      "before": {
+        "pos": "73.468792760827554 -16.587835559573062 0",
+        "quat": "0.99942459392793204 0 0 -0.033918741898664242"
+      },
+      "after": {
+        "pos": "59.4687928 -24.5 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r01_c07",
+      "before": {
+        "pos": "107.60468861698591 -16.863380929703631 0",
+        "quat": "0.99942334566088553 0 0 -0.033955502470174564"
+      },
+      "after": {
+        "pos": "93.6046886 -24.5 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r01_c08",
+      "before": {
+        "pos": "139.08050501764512 -16.925263977926999 0",
+        "quat": "0.99957568501587091 0 0 -0.029128163777562353"
+      },
+      "after": {
+        "pos": "125.580505 -24.5 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r01_c09",
+      "before": {
+        "pos": "168.37283126309489 -17.993201226931433 0",
+        "quat": "0.99992297009484021 0 0 0.012411844210808485"
+      },
+      "after": {
+        "pos": "156.122831 -24.5 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r02_c00",
+      "before": {
+        "pos": "-168.37716816213407 23.360857212347209 0",
+        "quat": "0.99939027520301893 0 0 0.034915295067263694"
+      },
+      "after": {
+        "pos": "-168.377168 24 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r02_c01",
+      "before": {
+        "pos": "-138.05088664801067 22.438636798485195 0",
+        "quat": "0.99934789056761186 0 0 -0.036108082447900945"
+      },
+      "after": {
+        "pos": "-138.050887 24 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r02_c02",
+      "before": {
+        "pos": "-109.16503314408551 22.832914362280444 0",
+        "quat": "0.99993952067665781 0 0 -0.010997953852232834"
+      },
+      "after": {
+        "pos": "-108.665033 24 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r02_c03",
+      "before": {
+        "pos": "-71.617806590256166 22.413717169042393 0",
+        "quat": "0.99980690725488319 0 0 -0.019650654071185797"
+      },
+      "after": {
+        "pos": "-71.6178066 24 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r02_c04",
+      "before": {
+        "pos": "-41.807574719314239 22.165427204851682 0",
+        "quat": "0.99984248112924579 0 0 -0.017748603587710667"
+      },
+      "after": {
+        "pos": "-41.8075747 24 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r02_c05",
+      "before": {
+        "pos": "42.042799073682929 23.197048403818965 0",
+        "quat": "0.99933489653645446 0 0 0.036465937043682915"
+      },
+      "after": {
+        "pos": "42.0427991 24 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r02_c06",
+      "before": {
+        "pos": "70.738262286141747 23.963017681692882 0",
+        "quat": "0.99952236446163334 0 0 0.030903769042398287"
+      },
+      "after": {
+        "pos": "71.4882623 24 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r02_c07",
+      "before": {
+        "pos": "107.81990268666149 22.359520156751284 0",
+        "quat": "0.99983709105015284 0 0 0.018049691420311705"
+      },
+      "after": {
+        "pos": "107.819903 24 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r02_c08",
+      "before": {
+        "pos": "137.68768943048019 22.064411289500168 0",
+        "quat": "0.99997265062303986 0 0 -0.0073958100254058277"
+      },
+      "after": {
+        "pos": "137.687689 24 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r02_c09",
+      "before": {
+        "pos": "168.2068939463386 23.507342859007689 0",
+        "quat": "0.99981455989916246 0 0 0.019257357389943157"
+      },
+      "after": {
+        "pos": "168.206894 24 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r03_c00",
+      "before": {
+        "pos": "-167.28261933906276 63.371117179647399 0",
+        "quat": "0.99991594251283122 0 0 -0.012965643396157614"
+      },
+      "after": {
+        "pos": "-167.282619 63 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r03_c01",
+      "before": {
+        "pos": "-138.08888730254577 62.256785258329117 0",
+        "quat": "0.99976041365437029 0 0 0.02188870232888138"
+      },
+      "after": {
+        "pos": "-138.088887 63 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r03_c02",
+      "before": {
+        "pos": "-106.58823896031284 62.695538641483274 0",
+        "quat": "0.99999978177327142 0 0 -0.00066064620601917565"
+      },
+      "after": {
+        "pos": "-106.588239 63 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r03_c03",
+      "before": {
+        "pos": "-70.830918291527666 62.965597069898564 0",
+        "quat": "0.99998086718484236 0 0 -0.0061858923568617122"
+      },
+      "after": {
+        "pos": "-71.3309183 63 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r03_c04",
+      "before": {
+        "pos": "-43.090262516225785 63.774107832834019 0",
+        "quat": "0.99984888706271857 0 0 -0.017383988018950587"
+      },
+      "after": {
+        "pos": "-43.0902625 63 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r03_c05",
+      "before": {
+        "pos": "41.064271508627719 62.909209376098964 0",
+        "quat": "0.99937732360883202 0 0 0.035284062357497564"
+      },
+      "after": {
+        "pos": "41.0642715 63 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r03_c06",
+      "before": {
+        "pos": "72.710337028692138 63.75393916543014 0",
+        "quat": "0.99980927013864851 0 0 0.019530062591371234"
+      },
+      "after": {
+        "pos": "72.710337 63 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r03_c07",
+      "before": {
+        "pos": "109.30468147323629 63.034291784150632 0",
+        "quat": "0.99969923311374564 0 0 -0.024524341210086217"
+      },
+      "after": {
+        "pos": "108.804681 63 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r03_c08",
+      "before": {
+        "pos": "136.73563891668664 62.462683207438616 0",
+        "quat": "0.99987621230314216 0 0 0.015734041766872015"
+      },
+      "after": {
+        "pos": "136.735639 63 0",
+        "quat": "1 0 0 0"
+      }
+    },
+    {
+      "body": "layout_line_r03_c09",
+      "before": {
+        "pos": "167.37171699435515 63.600818473866624 0",
+        "quat": "0.9999476034969712 0 0 0.010236711418417763"
+      },
+      "after": {
+        "pos": "167.371717 63 0",
+        "quat": "1 0 0 0"
+      }
+    }
+  ],
+  "actor_route_variant": "industrial",
+  "relocated_safety_geoms": [
+    {
+      "geom": "fire_extinguisher_04",
+      "delta": [
+        0,
+        8.5,
+        0
+      ]
+    },
+    {
+      "geom": "owned_visual_1256",
+      "delta": [
+        0,
+        8.5,
+        0
+      ]
+    },
+    {
+      "geom": "owned_visual_1265",
+      "delta": [
+        0,
+        8.5,
+        0
+      ]
+    },
+    {
+      "geom": "fire_extinguisher_05",
+      "delta": [
+        0,
+        8.5,
+        0
+      ]
+    },
+    {
+      "geom": "owned_visual_1257",
+      "delta": [
+        0,
+        8.5,
+        0
+      ]
+    },
+    {
+      "geom": "owned_visual_1266",
+      "delta": [
+        0,
+        8.5,
+        0
+      ]
+    },
+    {
+      "geom": "hazard_drill_leak_00",
+      "delta": [
+        16,
+        0,
+        0
+      ]
+    },
+    {
+      "geom": "hazard_drill_barrier_00",
+      "delta": [
+        16,
+        0,
+        0
+      ]
+    },
+    {
+      "geom": "fire_extinguisher_drill_00",
+      "delta": [
+        16,
+        0,
+        0
+      ]
+    },
+    {
+      "geom": "emergency_exit_drill_00",
+      "delta": [
+        16,
+        0,
+        0
+      ]
+    },
+    {
+      "geom": "owned_visual_1174",
+      "delta": [
+        16,
+        0,
+        0
+      ]
+    },
+    {
+      "geom": "owned_visual_1269",
+      "delta": [
+        16,
+        0,
+        0
+      ]
+    },
+    {
+      "geom": "owned_visual_1270",
+      "delta": [
+        16,
+        0,
+        0
+      ]
+    },
+    {
+      "geom": "owned_visual_1511",
+      "delta": [
+        16,
+        0,
+        0
+      ]
+    },
+    {
+      "geom": "owned_visual_1512",
+      "delta": [
+        16,
+        0,
+        0
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "name": "industrial_assembly_01",
+      "kind": "assembly",
+      "position": [
+        -178.064641,
+        -57.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_01",
+      "kind": "control",
+      "position": [
+        -178.064641,
+        -51.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_01",
+      "kind": "wip",
+      "position": [
+        -178.064641,
+        -62.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_01",
+      "kind": "service",
+      "position": [
+        -168.564641,
+        -57.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_02",
+      "kind": "assembly",
+      "position": [
+        -148.632741,
+        -57.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_02",
+      "kind": "control",
+      "position": [
+        -148.632741,
+        -51.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_02",
+      "kind": "wip",
+      "position": [
+        -148.632741,
+        -62.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_02",
+      "kind": "service",
+      "position": [
+        -139.132741,
+        -57.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_03",
+      "kind": "assembly",
+      "position": [
+        -116.626629,
+        -57.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_03",
+      "kind": "control",
+      "position": [
+        -116.626629,
+        -51.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_03",
+      "kind": "wip",
+      "position": [
+        -116.626629,
+        -62.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_03",
+      "kind": "service",
+      "position": [
+        -107.126629,
+        -57.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_04",
+      "kind": "assembly",
+      "position": [
+        -80.8174375,
+        -57.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_04",
+      "kind": "control",
+      "position": [
+        -80.8174375,
+        -51.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_04",
+      "kind": "wip",
+      "position": [
+        -80.8174375,
+        -62.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_04",
+      "kind": "service",
+      "position": [
+        -71.3174375,
+        -57.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_05",
+      "kind": "assembly",
+      "position": [
+        -51.4912123,
+        -57.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_05",
+      "kind": "control",
+      "position": [
+        -51.4912123,
+        -51.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_05",
+      "kind": "wip",
+      "position": [
+        -51.4912123,
+        -62.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_05",
+      "kind": "service",
+      "position": [
+        -41.9912123,
+        -57.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_06",
+      "kind": "assembly",
+      "position": [
+        50.0522393,
+        -57.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_06",
+      "kind": "control",
+      "position": [
+        50.0522393,
+        -51.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_06",
+      "kind": "wip",
+      "position": [
+        50.0522393,
+        -62.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_06",
+      "kind": "service",
+      "position": [
+        40.5522393,
+        -57.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_07",
+      "kind": "assembly",
+      "position": [
+        82.525077,
+        -57.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_07",
+      "kind": "control",
+      "position": [
+        82.525077,
+        -51.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_07",
+      "kind": "wip",
+      "position": [
+        82.525077,
+        -62.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_07",
+      "kind": "service",
+      "position": [
+        73.025077,
+        -57.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_08",
+      "kind": "assembly",
+      "position": [
+        120.750295,
+        -57.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_08",
+      "kind": "control",
+      "position": [
+        120.750295,
+        -51.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_08",
+      "kind": "wip",
+      "position": [
+        120.750295,
+        -62.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_08",
+      "kind": "service",
+      "position": [
+        111.250295,
+        -57.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_09",
+      "kind": "assembly",
+      "position": [
+        147.462931,
+        -57.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_09",
+      "kind": "control",
+      "position": [
+        147.462931,
+        -51.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_09",
+      "kind": "wip",
+      "position": [
+        147.462931,
+        -62.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_09",
+      "kind": "service",
+      "position": [
+        137.962931,
+        -57.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_10",
+      "kind": "assembly",
+      "position": [
+        176.817351,
+        -57.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_10",
+      "kind": "control",
+      "position": [
+        176.817351,
+        -51.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_10",
+      "kind": "wip",
+      "position": [
+        176.817351,
+        -62.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_10",
+      "kind": "service",
+      "position": [
+        167.317351,
+        -57.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_11",
+      "kind": "assembly",
+      "position": [
+        -163.521565,
+        -24.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_11",
+      "kind": "control",
+      "position": [
+        -163.521565,
+        -18.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_11",
+      "kind": "wip",
+      "position": [
+        -163.521565,
+        -29.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_11",
+      "kind": "service",
+      "position": [
+        -154.021565,
+        -24.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_12",
+      "kind": "assembly",
+      "position": [
+        -132.836622,
+        -24.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_12",
+      "kind": "control",
+      "position": [
+        -132.836622,
+        -18.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_12",
+      "kind": "wip",
+      "position": [
+        -132.836622,
+        -29.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_12",
+      "kind": "service",
+      "position": [
+        -123.336622,
+        -24.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_13",
+      "kind": "assembly",
+      "position": [
+        -102.7132521,
+        -24.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_13",
+      "kind": "control",
+      "position": [
+        -102.7132521,
+        -18.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_13",
+      "kind": "wip",
+      "position": [
+        -102.7132521,
+        -29.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_13",
+      "kind": "service",
+      "position": [
+        -93.2132521,
+        -24.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_14",
+      "kind": "assembly",
+      "position": [
+        -68.3995813,
+        -24.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_14",
+      "kind": "control",
+      "position": [
+        -68.3995813,
+        -18.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_14",
+      "kind": "wip",
+      "position": [
+        -68.3995813,
+        -29.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_14",
+      "kind": "service",
+      "position": [
+        -58.8995813,
+        -24.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_15",
+      "kind": "assembly",
+      "position": [
+        -36.9062581,
+        -24.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_15",
+      "kind": "control",
+      "position": [
+        -36.9062581,
+        -18.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_15",
+      "kind": "wip",
+      "position": [
+        -36.9062581,
+        -29.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_15",
+      "kind": "service",
+      "position": [
+        -27.4062581,
+        -24.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_16",
+      "kind": "assembly",
+      "position": [
+        36.4118857,
+        -24.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_16",
+      "kind": "control",
+      "position": [
+        36.4118857,
+        -18.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_16",
+      "kind": "wip",
+      "position": [
+        36.4118857,
+        -29.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_16",
+      "kind": "service",
+      "position": [
+        26.9118857,
+        -24.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_17",
+      "kind": "assembly",
+      "position": [
+        68.9687928,
+        -24.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_17",
+      "kind": "control",
+      "position": [
+        68.9687928,
+        -18.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_17",
+      "kind": "wip",
+      "position": [
+        68.9687928,
+        -29.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_17",
+      "kind": "service",
+      "position": [
+        59.4687928,
+        -24.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_18",
+      "kind": "assembly",
+      "position": [
+        103.1046886,
+        -24.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_18",
+      "kind": "control",
+      "position": [
+        103.1046886,
+        -18.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_18",
+      "kind": "wip",
+      "position": [
+        103.1046886,
+        -29.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_18",
+      "kind": "service",
+      "position": [
+        93.6046886,
+        -24.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_19",
+      "kind": "assembly",
+      "position": [
+        135.08050500000002,
+        -24.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_19",
+      "kind": "control",
+      "position": [
+        135.08050500000002,
+        -18.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_19",
+      "kind": "wip",
+      "position": [
+        135.08050500000002,
+        -29.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_19",
+      "kind": "service",
+      "position": [
+        125.580505,
+        -24.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_20",
+      "kind": "assembly",
+      "position": [
+        165.622831,
+        -24.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_20",
+      "kind": "control",
+      "position": [
+        165.622831,
+        -18.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_20",
+      "kind": "wip",
+      "position": [
+        165.622831,
+        -29.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_20",
+      "kind": "service",
+      "position": [
+        156.122831,
+        -24.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_21",
+      "kind": "assembly",
+      "position": [
+        -177.877168,
+        24.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_21",
+      "kind": "control",
+      "position": [
+        -177.877168,
+        30.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_21",
+      "kind": "wip",
+      "position": [
+        -177.877168,
+        19.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_21",
+      "kind": "service",
+      "position": [
+        -168.377168,
+        24.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_22",
+      "kind": "assembly",
+      "position": [
+        -147.550887,
+        24.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_22",
+      "kind": "control",
+      "position": [
+        -147.550887,
+        30.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_22",
+      "kind": "wip",
+      "position": [
+        -147.550887,
+        19.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_22",
+      "kind": "service",
+      "position": [
+        -138.050887,
+        24.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_23",
+      "kind": "assembly",
+      "position": [
+        -118.165033,
+        24.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_23",
+      "kind": "control",
+      "position": [
+        -118.165033,
+        30.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_23",
+      "kind": "wip",
+      "position": [
+        -118.165033,
+        19.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_23",
+      "kind": "service",
+      "position": [
+        -108.665033,
+        24.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_24",
+      "kind": "assembly",
+      "position": [
+        -81.1178066,
+        24.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_24",
+      "kind": "control",
+      "position": [
+        -81.1178066,
+        30.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_24",
+      "kind": "wip",
+      "position": [
+        -81.1178066,
+        19.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_24",
+      "kind": "service",
+      "position": [
+        -71.6178066,
+        24.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_25",
+      "kind": "assembly",
+      "position": [
+        -51.3075747,
+        24.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_25",
+      "kind": "control",
+      "position": [
+        -51.3075747,
+        30.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_25",
+      "kind": "wip",
+      "position": [
+        -51.3075747,
+        19.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_25",
+      "kind": "service",
+      "position": [
+        -41.8075747,
+        24.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_26",
+      "kind": "assembly",
+      "position": [
+        51.5427991,
+        24.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_26",
+      "kind": "control",
+      "position": [
+        51.5427991,
+        30.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_26",
+      "kind": "wip",
+      "position": [
+        51.5427991,
+        19.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_26",
+      "kind": "service",
+      "position": [
+        42.0427991,
+        24.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_27",
+      "kind": "assembly",
+      "position": [
+        80.9882623,
+        24.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_27",
+      "kind": "control",
+      "position": [
+        80.9882623,
+        30.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_27",
+      "kind": "wip",
+      "position": [
+        80.9882623,
+        19.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_27",
+      "kind": "service",
+      "position": [
+        71.4882623,
+        24.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_28",
+      "kind": "assembly",
+      "position": [
+        117.319903,
+        24.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_28",
+      "kind": "control",
+      "position": [
+        117.319903,
+        30.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_28",
+      "kind": "wip",
+      "position": [
+        117.319903,
+        19.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_28",
+      "kind": "service",
+      "position": [
+        107.819903,
+        24.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_29",
+      "kind": "assembly",
+      "position": [
+        147.187689,
+        24.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_29",
+      "kind": "control",
+      "position": [
+        147.187689,
+        30.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_29",
+      "kind": "wip",
+      "position": [
+        147.187689,
+        19.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_29",
+      "kind": "service",
+      "position": [
+        137.687689,
+        24.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_30",
+      "kind": "assembly",
+      "position": [
+        177.706894,
+        24.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_30",
+      "kind": "control",
+      "position": [
+        177.706894,
+        30.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_30",
+      "kind": "wip",
+      "position": [
+        177.706894,
+        19.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_30",
+      "kind": "service",
+      "position": [
+        168.206894,
+        24.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_31",
+      "kind": "assembly",
+      "position": [
+        -176.782619,
+        63.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_31",
+      "kind": "control",
+      "position": [
+        -176.782619,
+        69.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_31",
+      "kind": "wip",
+      "position": [
+        -176.782619,
+        58.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_31",
+      "kind": "service",
+      "position": [
+        -167.282619,
+        63.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_32",
+      "kind": "assembly",
+      "position": [
+        -147.588887,
+        63.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_32",
+      "kind": "control",
+      "position": [
+        -147.588887,
+        69.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_32",
+      "kind": "wip",
+      "position": [
+        -147.588887,
+        58.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_32",
+      "kind": "service",
+      "position": [
+        -138.088887,
+        63.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_33",
+      "kind": "assembly",
+      "position": [
+        -116.088239,
+        63.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_33",
+      "kind": "control",
+      "position": [
+        -116.088239,
+        69.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_33",
+      "kind": "wip",
+      "position": [
+        -116.088239,
+        58.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_33",
+      "kind": "service",
+      "position": [
+        -106.588239,
+        63.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_34",
+      "kind": "assembly",
+      "position": [
+        -80.8309183,
+        63.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_34",
+      "kind": "control",
+      "position": [
+        -80.8309183,
+        69.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_34",
+      "kind": "wip",
+      "position": [
+        -80.8309183,
+        58.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_34",
+      "kind": "service",
+      "position": [
+        -71.3309183,
+        63.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_35",
+      "kind": "assembly",
+      "position": [
+        -52.5902625,
+        63.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_35",
+      "kind": "control",
+      "position": [
+        -52.5902625,
+        69.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_35",
+      "kind": "wip",
+      "position": [
+        -52.5902625,
+        58.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_35",
+      "kind": "service",
+      "position": [
+        -43.5902625,
+        63.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_36",
+      "kind": "assembly",
+      "position": [
+        50.5642715,
+        63.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_36",
+      "kind": "control",
+      "position": [
+        50.5642715,
+        69.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_36",
+      "kind": "wip",
+      "position": [
+        50.5642715,
+        58.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_36",
+      "kind": "service",
+      "position": [
+        41.0642715,
+        63.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_37",
+      "kind": "assembly",
+      "position": [
+        82.210337,
+        63.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_37",
+      "kind": "control",
+      "position": [
+        82.210337,
+        69.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_37",
+      "kind": "wip",
+      "position": [
+        82.210337,
+        58.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_37",
+      "kind": "service",
+      "position": [
+        72.710337,
+        63.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_38",
+      "kind": "assembly",
+      "position": [
+        118.304681,
+        63.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_38",
+      "kind": "control",
+      "position": [
+        118.304681,
+        69.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_38",
+      "kind": "wip",
+      "position": [
+        118.304681,
+        58.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_38",
+      "kind": "service",
+      "position": [
+        108.804681,
+        63.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_39",
+      "kind": "assembly",
+      "position": [
+        146.235639,
+        63.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_39",
+      "kind": "control",
+      "position": [
+        146.235639,
+        69.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_39",
+      "kind": "wip",
+      "position": [
+        146.235639,
+        58.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_39",
+      "kind": "service",
+      "position": [
+        136.735639,
+        63.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_assembly_40",
+      "kind": "assembly",
+      "position": [
+        176.871717,
+        63.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_control_40",
+      "kind": "control",
+      "position": [
+        176.871717,
+        69.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_wip_40",
+      "kind": "wip",
+      "position": [
+        176.871717,
+        58.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_service_40",
+      "kind": "service",
+      "position": [
+        167.371717,
+        63.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_01",
+      "kind": "rack_protection",
+      "position": [
+        -165.0,
+        -128.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_02",
+      "kind": "rack_protection",
+      "position": [
+        -135.0,
+        -128.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_03",
+      "kind": "rack_protection",
+      "position": [
+        -105.0,
+        -128.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_04",
+      "kind": "rack_protection",
+      "position": [
+        -60.0,
+        -128.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_05",
+      "kind": "rack_protection",
+      "position": [
+        -30.0,
+        -128.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_06",
+      "kind": "rack_protection",
+      "position": [
+        30.0,
+        -128.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_07",
+      "kind": "rack_protection",
+      "position": [
+        60.0,
+        -128.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_08",
+      "kind": "rack_protection",
+      "position": [
+        105.0,
+        -128.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_09",
+      "kind": "rack_protection",
+      "position": [
+        135.0,
+        -128.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_10",
+      "kind": "rack_protection",
+      "position": [
+        165.0,
+        -128.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_11",
+      "kind": "rack_protection",
+      "position": [
+        -165.0,
+        -116.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_12",
+      "kind": "rack_protection",
+      "position": [
+        -135.0,
+        -116.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_13",
+      "kind": "rack_protection",
+      "position": [
+        -105.0,
+        -116.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_14",
+      "kind": "rack_protection",
+      "position": [
+        -60.0,
+        -116.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_15",
+      "kind": "rack_protection",
+      "position": [
+        -30.0,
+        -116.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_16",
+      "kind": "rack_protection",
+      "position": [
+        30.0,
+        -116.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_17",
+      "kind": "rack_protection",
+      "position": [
+        60.0,
+        -116.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_18",
+      "kind": "rack_protection",
+      "position": [
+        105.0,
+        -116.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_19",
+      "kind": "rack_protection",
+      "position": [
+        135.0,
+        -116.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_20",
+      "kind": "rack_protection",
+      "position": [
+        165.0,
+        -116.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_21",
+      "kind": "rack_protection",
+      "position": [
+        -165.0,
+        -104.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_22",
+      "kind": "rack_protection",
+      "position": [
+        -135.0,
+        -104.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_23",
+      "kind": "rack_protection",
+      "position": [
+        -105.0,
+        -104.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_24",
+      "kind": "rack_protection",
+      "position": [
+        -60.0,
+        -104.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_25",
+      "kind": "rack_protection",
+      "position": [
+        -30.0,
+        -104.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_26",
+      "kind": "rack_protection",
+      "position": [
+        30.0,
+        -104.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_27",
+      "kind": "rack_protection",
+      "position": [
+        60.0,
+        -104.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_28",
+      "kind": "rack_protection",
+      "position": [
+        105.0,
+        -104.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_29",
+      "kind": "rack_protection",
+      "position": [
+        135.0,
+        -104.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_30",
+      "kind": "rack_protection",
+      "position": [
+        165.0,
+        -104.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_31",
+      "kind": "rack_protection",
+      "position": [
+        -165.0,
+        -92.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_32",
+      "kind": "rack_protection",
+      "position": [
+        -135.0,
+        -92.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_33",
+      "kind": "rack_protection",
+      "position": [
+        -105.0,
+        -92.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_34",
+      "kind": "rack_protection",
+      "position": [
+        -60.0,
+        -92.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_35",
+      "kind": "rack_protection",
+      "position": [
+        -30.0,
+        -92.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_36",
+      "kind": "rack_protection",
+      "position": [
+        30.0,
+        -92.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_37",
+      "kind": "rack_protection",
+      "position": [
+        60.0,
+        -92.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_38",
+      "kind": "rack_protection",
+      "position": [
+        105.0,
+        -92.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_39",
+      "kind": "rack_protection",
+      "position": [
+        135.0,
+        -92.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_rack_40",
+      "kind": "rack_protection",
+      "position": [
+        165.0,
+        -92.0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_staging_01",
+      "kind": "pallet_staging",
+      "position": [
+        -150,
+        -98,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_staging_02",
+      "kind": "pallet_staging",
+      "position": [
+        -120,
+        -98,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_staging_03",
+      "kind": "pallet_staging",
+      "position": [
+        -82.5,
+        -98,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_staging_04",
+      "kind": "pallet_staging",
+      "position": [
+        -45,
+        -98,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_staging_05",
+      "kind": "pallet_staging",
+      "position": [
+        45,
+        -98,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_staging_06",
+      "kind": "pallet_staging",
+      "position": [
+        82.5,
+        -98,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_staging_07",
+      "kind": "pallet_staging",
+      "position": [
+        120,
+        -98,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_staging_08",
+      "kind": "pallet_staging",
+      "position": [
+        150,
+        -98,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_fire_station_0",
+      "kind": "fire_station",
+      "position": [
+        -120,
+        -73.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_fire_station_1",
+      "kind": "fire_station",
+      "position": [
+        120,
+        -73.5,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_training_bay",
+      "kind": "training_bay",
+      "position": [
+        16,
+        -129,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_median_00",
+      "kind": "median_marking",
+      "position": [
+        -170,
+        0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_median_01",
+      "kind": "median_marking",
+      "position": [
+        -150,
+        0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_median_02",
+      "kind": "median_marking",
+      "position": [
+        -130,
+        0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_median_03",
+      "kind": "median_marking",
+      "position": [
+        -110,
+        0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_median_04",
+      "kind": "median_marking",
+      "position": [
+        -90,
+        0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_median_05",
+      "kind": "median_marking",
+      "position": [
+        -70,
+        0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_median_06",
+      "kind": "median_marking",
+      "position": [
+        -50,
+        0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_median_07",
+      "kind": "median_marking",
+      "position": [
+        -30,
+        0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_median_08",
+      "kind": "median_marking",
+      "position": [
+        -10,
+        0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_median_09",
+      "kind": "median_marking",
+      "position": [
+        10,
+        0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_median_10",
+      "kind": "median_marking",
+      "position": [
+        30,
+        0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_median_11",
+      "kind": "median_marking",
+      "position": [
+        50,
+        0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_median_12",
+      "kind": "median_marking",
+      "position": [
+        70,
+        0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_median_13",
+      "kind": "median_marking",
+      "position": [
+        90,
+        0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_median_14",
+      "kind": "median_marking",
+      "position": [
+        110,
+        0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_median_15",
+      "kind": "median_marking",
+      "position": [
+        130,
+        0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_median_16",
+      "kind": "median_marking",
+      "position": [
+        150,
+        0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    },
+    {
+      "name": "industrial_median_17",
+      "kind": "median_marking",
+      "position": [
+        170,
+        0,
+        0
+      ],
+      "quat": "1 0 0 0"
+    }
+  ],
+  "fixture_meshes": 203,
+  "scope": "Static physical facilities; existing production machinery/actors retained",
+  "reserved_aisles": [
+    {
+      "axis": "x",
+      "center": 0,
+      "halfwidth": 6
+    },
+    {
+      "axis": "y",
+      "center": 0,
+      "halfwidth": 5
+    },
+    {
+      "axis": "y",
+      "center": -82,
+      "halfwidth": 5
+    }
+  ],
+  "floor_marking_max_z_m": 0.0011,
+  "nominal_side_service_passage_m": 1.8,
+  "cell_x_offsets_m": {
+    "layout_line_r00_c00": 0.75,
+    "layout_line_r00_c01": 0.0,
+    "layout_line_r00_c02": 0.0,
+    "layout_line_r00_c03": -0.25,
+    "layout_line_r00_c04": 0.0,
+    "layout_line_r00_c05": 0.0,
+    "layout_line_r00_c06": 0.0,
+    "layout_line_r00_c07": 3.75,
+    "layout_line_r00_c08": 0.0,
+    "layout_line_r00_c09": 0.0,
+    "layout_line_r01_c00": 0.0,
+    "layout_line_r01_c01": 0.0,
+    "layout_line_r01_c02": 0.0,
+    "layout_line_r01_c03": 0.0,
+    "layout_line_r01_c04": 0.0,
+    "layout_line_r01_c05": 0.0,
+    "layout_line_r01_c06": 0.0,
+    "layout_line_r01_c07": 0.0,
+    "layout_line_r01_c08": 0.5,
+    "layout_line_r01_c09": 1.75,
+    "layout_line_r02_c00": 0.0,
+    "layout_line_r02_c01": 0.0,
+    "layout_line_r02_c02": 0.5,
+    "layout_line_r02_c03": 0.0,
+    "layout_line_r02_c04": 0.0,
+    "layout_line_r02_c05": 0.0,
+    "layout_line_r02_c06": 0.75,
+    "layout_line_r02_c07": 0.0,
+    "layout_line_r02_c08": 0.0,
+    "layout_line_r02_c09": 0.0,
+    "layout_line_r03_c00": 0.0,
+    "layout_line_r03_c01": 0.0,
+    "layout_line_r03_c02": 0.0,
+    "layout_line_r03_c03": -0.5,
+    "layout_line_r03_c04": 0.0,
+    "layout_line_r03_c05": 0.0,
+    "layout_line_r03_c06": 0.0,
+    "layout_line_r03_c07": -0.5,
+    "layout_line_r03_c08": 0.0,
+    "layout_line_r03_c09": 0.0
+  }
+}

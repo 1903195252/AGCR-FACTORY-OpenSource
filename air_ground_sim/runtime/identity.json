@@ -1,0 +1,10 @@
+{
+  "python": "3.11",
+  "platform": "Linux x86_64",
+  "mujoco_version": "3.12.1",
+  "upstream_commit": "707f4735e248872a38c5040a21b510a5bd386459",
+  "library_sha256": "713cd9f5e8f25871f9d14c2c960116bb4215dd4a6213c48762e20b4b41dae555",
+  "scope": "Pinned local native engine and Python bindings; not a universal wheel.",
+  "source_library_sha256": "c90010cdfb309a1130d8c72535cd3b189fbfd55f2525fcd0314d54fb90f64324",
+  "relocation": "Origin-relative runtime; diagnostic source filenames anonymized in .rodata without changes to executable sections."
+}

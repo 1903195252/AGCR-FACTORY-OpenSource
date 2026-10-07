@@ -1,0 +1,47 @@
+{
+  "schema": "gate_robot_hardware_reconstruction_v1",
+  "uav": {
+    "nominal_mass_kg": 2.5,
+    "frame_side_m": 0.15,
+    "pivot_square_side_m": 0.125,
+    "arm_pivot_to_motor_m": 0.11637,
+    "propeller_radius_m": 0.065,
+    "motor_housing_radius_m": 0.017,
+    "pivot_shaft_radius_m": 0.0125,
+    "folding": {
+      "actuated_servo_count": 1,
+      "pinion_teeth": 18,
+      "main_gear_teeth": 62,
+      "gear_center_distance_m": 0.04,
+      "crank_radius_m": 0.045,
+      "coupler_length_m": 0.07593,
+      "output_link_length_m": 0.03216,
+      "pin_offset_m": 0.012,
+      "deployed_arm_deg": 45.0,
+      "folded_arm_deg": -76.5,
+      "servo_total_travel_deg": 270.0,
+      "nominal_command_fold_duration_s": 0.6,
+      "paper_servo_description": "20 kg digital servo; exact part number and torque-speed curve unavailable",
+      "interpretation_20_kgf_cm_Nm": 1.96133,
+      "interpretation_is_verified_continuous_torque": false
+    }
+  },
+  "ground": {
+    "nominal_mass_kg": 2.5,
+    "backplate_length_m": 0.3,
+    "backplate_width_m": 0.18,
+    "backplate_thickness_m": null,
+    "backplate_material": "Q235 galvanized steel mating plate; exact thickness/mass partition pending",
+    "leg_servos": 8,
+    "wheel_motors": 4,
+    "whole_robot_uniform_rescale_authorized": false
+  },
+  "unmeasured_parameters": [
+    "component_material_and_mass_partition",
+    "backplate_thickness_and_mounting_geometry",
+    "servo_no_load_speed_continuous_torque_and_response",
+    "gear_efficiency_backlash_and_pin_friction",
+    "wheel_torque_speed_curve_and_surface_friction",
+    "magnet_force_gap_curve_shear_peeling_and_release_transient"
+  ]
+}
